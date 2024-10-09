@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TelaLogin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <img class="logo" src="logonkn.png" alt="Logo NKN" >
+        
+        <div class="menu">
+
+            <form id="cadastro" method="POST" action="registro.php">
+                <input type="text" name="nome" placeholder="Nome" required />
+                <i class="fas fa-user iNome"></i>
+
+                <input type="text" name="email" placeholder="Email" required />
+                <i class="fas fa-envelope iEmail"></i>
+
+                <input type="text" onkeyup="formatarTelefone(this)" name="whatsapp" maxlength="11"
+                    placeholder="(XX) XXXXX-XXXX" required />
+                <i class="fab fa-whatsapp iWhatsApp"></i>
+
+                <input type="date" name="datanascimento" id="datanascimento" placeholder="Data de Nascimento"
+                    required />
+                <i class="fas fa-calendar-alt iData"></i>
+
+                <input type="password" name="senha" placeholder="Password" required />
+                <i class="fas fa-lock iPassword"></i>
+
+                <input type="password" name="confirmar_senha" id="confirmarsenha" placeholder="Password" required />
+                <i class="fas fa-lock iPassword2"></i>
+
+
+
+                <div class="divCheck">
+
+                </div>
+                <button type="submit">Cadastrar-se</button>
+
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

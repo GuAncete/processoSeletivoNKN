@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+
+
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.menu {
+    background-color: whitesmoke;
+    width: 550px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 darkgrey;
+    overflow-y: auto;
+
+}
+
+form {
+    position: absolute;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    border: none;
+    margin-top: 40px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px;
+    outline: none;
+    width: 145%;
+}
+
+button[type="submit"] {
+    background: #35b9ac;
+    color: white;
+    border-radius: 30px;
+    width: 145%;
+    border: none;
+    outline: none;
+    padding: 8px 0 8px 15px;
+    font-size: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2e948a;
+}
+
+button:active {
+    background: #236d66;
+}
+
+
+#cadastro {
+
+    left: 45px;
+}
+
+i {
+    position: absolute;
+    left: 0;
+    padding: 10px 10px;
+}
+
+.iEmail {
+    top: 116px;
+}
+
+.iPassword {
+    top: 345px;
+}
+
+.iPassword2 {
+    top: 420px;
+}
+
+.iPassword3 {
+    top: 114px;
+}
+
+.iEmail3 {
+    top: 40px;
+}
+
+.iData {
+    top: 270px;
+}
+
+.iNome {
+    top: 40px;
+}
+
+.iWhatsApp {
+    top: 193px;
+}
+
+@media (max-width: 700px) {
+
+    .menu {
+        width: 400px;
+        height: 600px;
+
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"] {
+        border: none;
+        margin-top: 40px;
+        border-radius: 60px;
+        padding: 8px 0 8px 35px;
+        outline: none;
+        width: 100%;
+    }
+
+    button[type="submit"] {
+        background: #35b9ac;
+        color: white;
+        border-radius: 30px;
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 8px 0 8px 15px;
+        font-size: 15px;
+        margin-top: 40px;
+        cursor: pointer;
+    }
+
+    .logo{
+        height: 100px;
+        width: 100px;
+        margin-top: 100px;
+    
+    }
+
+}
